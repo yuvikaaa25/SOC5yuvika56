@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+class Rectangle
+{
+private:
+float length;
+float breadth;
+
+void Accept()
+{
+cout<<"enter length:";
+cin>>length;
+cout<<"enter breadth:";
+cin>>breadth;
+}
+public:
+float area();
+float perimeter();
+
+void display()
+{
+cout<<"The area is:"<<area()<<endl;
+cout<<"The perimeter is:"perimeter()<<endl;
+}
+};
+
+float Rectangle::area()
+{
+return  length*breadth;
+}
+float Rectangle::perimeter()
+{
+return 2(length+breadth)
+}
+
+int main()
+{
+Rectangle r;
+r.Accept();
+r.display();
+return 0;
+}
+
+
