@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+class Box
+{
+private:
+int length=5;
+public:
+friend void displaylength(Box b);
+};
+void displaylength(Box b)
+{
+cout<<"The length of box is"<<b.length;
+}
+int main()
+{
+Box b;
+displaylength(b);
+return 0 ;
+}
+
+
